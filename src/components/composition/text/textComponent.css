@@ -1,0 +1,8 @@
+.textHolder, .textHolder p{
+  width: 100%;
+}
+
+.textHolder p {
+  margin: 0;
+  text-align: justify;
+}

@@ -3,9 +3,18 @@ import React from 'react';
 import { SimpleClassComponent } from './classComponents/simpleClassComponent';
 import { SimpleFunctionalComponent } from './functionalComponents/simpleFunctionalComponent';
 import { DecoratedClassComponent } from './classComponents/decoratedClassComponent';
-// import { WrapperComponent } from './composition/wrapperComponent';
 // import { Preloader } from './functionalComponents/Preloader';
 // import Button, { TextButton } from '../components/hoc/Buttons';
+
+
+// import { 
+//     WrapperComponent,
+//     ImageComponent, 
+//     TextComponent,
+//     CardComponent
+// } from '../components/composition';
+
+
 
 import './app.css';
 
@@ -24,6 +33,13 @@ export default function App() {
 
             {/* <Preloader />  */}
             {/* <Button /> */}
+            {/* <WrapperComponent>
+                <CardComponent 
+                    left={<ImageComponent />}
+                    right={<TextComponent />}
+                />
+            </WrapperComponent> */}
+               
         </div>
     );
 }
