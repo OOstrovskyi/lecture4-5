@@ -1,3 +1,7 @@
 .simpleClassComponent{
     background-color: beige;
 }
+
+.simpleClassComponent h3 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
