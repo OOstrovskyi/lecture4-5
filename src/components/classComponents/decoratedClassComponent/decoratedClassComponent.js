@@ -4,7 +4,7 @@ import { withSimpleDecorator } from '../../decorators'
 
 import './decoratedClassComponent.css';
 
-@withSimpleDecorator
+// @withSimpleDecorator
 class DecoratedClassComponent extends Component {
 
     static displayName = 'WannaChangeThisName';
@@ -25,7 +25,7 @@ class DecoratedClassComponent extends Component {
     render() {
         console.log('Call____render');
         return (
-            <div className="simpleClassComponent">
+            <div onClick={this.onTitlePress} className="simpleClassComponent">
                 <h3>I am Decorated Class Component</h3>
             </div>
         );
@@ -36,4 +36,6 @@ class DecoratedClassComponent extends Component {
     }
 }
 
-export default DecoratedClassComponent;
+// export default DecoratedClassComponent;
+
+export default withSimpleDecorator(DecoratedClassComponent);

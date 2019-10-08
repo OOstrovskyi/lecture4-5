@@ -15,7 +15,7 @@ export default function(TargetClass) {
         }
 
         onTitlePress = () => {
-            console.log('-----Pressed-----');
+            console.log('in--decorator--handler-----Pressed-----');
         }
     }
 }
