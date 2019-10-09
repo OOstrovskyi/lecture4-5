@@ -1,5 +1,7 @@
 import React from 'react';
 
+import createDiv from '../components/reactCreateElement';
+
 import { SimpleClassComponent } from './classComponents/simpleClassComponent';
 import { SimpleFunctionalComponent } from './functionalComponents/simpleFunctionalComponent';
 import { DecoratedClassComponent } from './classComponents/decoratedClassComponent';
@@ -14,18 +16,21 @@ import { DecoratedClassComponent } from './classComponents/decoratedClassCompone
 //     CardComponent
 // } from '../components/composition';
 
-
+import { ParentComponent, ChildComponent } from './inheritance';
 
 import './app.css';
 
 export default function App() {
     return (
         <div className="app">
-            <SimpleClassComponent />
 
-            <SimpleFunctionalComponent />
+            {/* {createDiv()} */}
+            
+            {/* <SimpleClassComponent /> */}
 
-            <DecoratedClassComponent />
+            {/* <SimpleFunctionalComponent /> */}
+
+            {/* <DecoratedClassComponent /> */}
 
             {/* <WrapperComponent>
                 <SimpleFunctionalComponent />
@@ -39,7 +44,8 @@ export default function App() {
                     right={<TextComponent />}
                 />
             </WrapperComponent> */}
-               
+            <ChildComponent />
+            <ParentComponent />
         </div>
     );
 }
