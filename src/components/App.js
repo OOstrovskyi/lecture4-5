@@ -42,14 +42,17 @@ export default function App() {
 
             {/* <Preloader />  */}
             {/* <Button /> */}
-            <Dragable>
-                <WrapperComponent>
-                    <CardComponent 
+
+
+            {/* <Dragable> */}
+                {/* <WrapperComponent> */}
+                    {/* <CardComponent 
                         left={<ImageComponent />}
                         right={<TextComponent />}
-                    />
-                </WrapperComponent>
-            </Dragable>
+                    /> */}
+                {/* </WrapperComponent> */}
+            {/* </Dragable> */}
+
             {/* <ChildComponent />
             <ParentComponent /> */}
         </div>
