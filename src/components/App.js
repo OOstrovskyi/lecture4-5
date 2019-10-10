@@ -2,6 +2,7 @@ import React from 'react';
 
 import createDiv from '../components/reactCreateElement';
 
+import { ContainerComponent } from './propsAndState';
 import { SimpleClassComponent } from './classComponents/simpleClassComponent';
 import { SimpleFunctionalComponent } from './functionalComponents/simpleFunctionalComponent';
 import { DecoratedClassComponent } from './classComponents/decoratedClassComponent';
@@ -9,14 +10,13 @@ import { DecoratedClassComponent } from './classComponents/decoratedClassCompone
 // import Button, { TextButton } from '../components/hoc/Buttons';
 
 
-// import { 
-//     WrapperComponent,
-//     ImageComponent, 
-//     TextComponent,
-//     CardComponent
-// } from '../components/composition';
-
-import { ContainerComponent } from './propsAndState';
+import { 
+    WrapperComponent,
+    ImageComponent, 
+    TextComponent,
+    CardComponent,
+    Dragable,
+} from '../components/composition';
 
 import { ParentComponent, ChildComponent } from './inheritance';
 
@@ -26,7 +26,7 @@ export default function App() {
     return (
         <div className="app">
 
-            < ContainerComponent name="Ben" />
+            {/* < ContainerComponent name="Ben" /> */}
 
             {/* {createDiv()} */}
             
@@ -42,13 +42,14 @@ export default function App() {
 
             {/* <Preloader />  */}
             {/* <Button /> */}
-            {/* <WrapperComponent>
-                <CardComponent 
-                    left={<ImageComponent />}
-                    right={<TextComponent />}
-                />
-            </WrapperComponent> */}
-
+            <Dragable>
+                <WrapperComponent>
+                    <CardComponent 
+                        left={<ImageComponent />}
+                        right={<TextComponent />}
+                    />
+                </WrapperComponent>
+            </Dragable>
             {/* <ChildComponent />
             <ParentComponent /> */}
         </div>
