@@ -16,6 +16,8 @@ import { DecoratedClassComponent } from './classComponents/decoratedClassCompone
 //     CardComponent
 // } from '../components/composition';
 
+import { ContainerComponent } from './propsAndState';
+
 import { ParentComponent, ChildComponent } from './inheritance';
 
 import './app.css';
@@ -23,6 +25,8 @@ import './app.css';
 export default function App() {
     return (
         <div className="app">
+
+            < ContainerComponent name="Ben" />
 
             {/* {createDiv()} */}
             
@@ -44,8 +48,9 @@ export default function App() {
                     right={<TextComponent />}
                 />
             </WrapperComponent> */}
-            <ChildComponent />
-            <ParentComponent />
+
+            {/* <ChildComponent />
+            <ParentComponent /> */}
         </div>
     );
 }
