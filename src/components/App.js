@@ -20,6 +20,8 @@ import {
 
 import { ParentComponent, ChildComponent } from './inheritance';
 
+// import { Button, TextField } from '@material-ui/core';
+
 import './app.css';
 
 export default function App() {
@@ -44,14 +46,14 @@ export default function App() {
             {/* <Button /> */}
 
 
-            {/* <Dragable> */}
-                {/* <WrapperComponent> */}
-                    {/* <CardComponent 
+            {/* <Dragable>
+                <WrapperComponent>
+                    <CardComponent 
                         left={<ImageComponent />}
                         right={<TextComponent />}
-                    /> */}
-                {/* </WrapperComponent> */}
-            {/* </Dragable> */}
+                    />
+                </WrapperComponent>
+            </Dragable> */}
 
             {/* <ChildComponent />
             <ParentComponent /> */}
