@@ -8,7 +8,15 @@ const ButtonHOC = Comp => (
       loading: PropTypes.bool,
       disabled: PropTypes.bool,
       style: PropTypes.shape({}),
-      content: PropTypes.string,
+      children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+      ]),
+      content: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+        PropTypes.string,
+      ]),
     }
 
     static defaultProps = {

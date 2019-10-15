@@ -4,6 +4,10 @@ html, body{
   background-color: azure;
 }
 
+#root{
+    padding: 50px;
+}
+
 @font-face {
   font-family: 'Montserrat-SemiBold';
   src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
@@ -30,4 +34,8 @@ html, body{
   src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf');
   font-weight: normal;
   font-style: normal;
+}
+
+.toUpperCase{
+    text-transform: uppercase;
 }

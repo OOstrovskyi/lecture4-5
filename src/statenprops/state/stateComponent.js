@@ -11,7 +11,7 @@ import { Preloader } from '../../components/functionalComponents/Preloader';
 
 import spiner from '../../assets/images/spiner1.gif';
 
-export default class stateComponent extends Component {
+export default class StateComponent extends Component {
 
     constructor(props) {
         super(props);

@@ -22,8 +22,7 @@ const TextButton = ({ ...props }) => {
       disabled={disabled}
       style={style}
     >
-      {loading ? <Preloader /> : content}
-      {children}
+      {loading ? <Preloader /> : children ? children : content}
     </button>
   );
 };
