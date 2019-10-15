@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import spiner from '../../../assets/images/spiner1.gif';
 
@@ -24,8 +24,8 @@ Preloader.defaultProps = {
   scale: 1,
 };
 
-// Preloader.propTypes = {
-//   scale: PropTypes.number,
-// };
+Preloader.propTypes = {
+  scale: PropTypes.number,
+};
 
 export default Preloader;
