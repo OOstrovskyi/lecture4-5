@@ -48,10 +48,10 @@ export default function App() {
             </Button> */}
 
             {/* <Button
-                // content={<p>Hello</p>}
-                // onClick={onClick}
-                // style={buttonStyle}
-                // className="toUpperCase"
+                content={<p>Hello</p>}
+                onClick={onClick}
+                style={buttonStyle}
+                className="toUpperCase"
             /> */}
 
             {/* <ControlledComponent /> */}
@@ -59,14 +59,14 @@ export default function App() {
     );
 }
 
-// function onClick() {
-//     console.log('NEW ONCLICK HANDLER');
-// };
+function onClick() {
+    console.log('NEW ONCLICK HANDLER');
+};
 
-// export const buttonStyle = {
-//     backgroundColor: 'pink',
-//     borderRadius: '50px',
-//     margin: '16px',
-//     outline: 0,
-//     boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.2)',
-// };
+export const buttonStyle = {
+    backgroundColor: 'pink',
+    borderRadius: '50px',
+    margin: '16px',
+    outline: 0,
+    boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.2)',
+};

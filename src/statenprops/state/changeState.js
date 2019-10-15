@@ -30,6 +30,30 @@ export default class ChangeState extends Component {
     //     );
     // }
 
+    //  changeState = () => {
+    //     this.setState(
+    //         (state) => {
+    //             console.log(state);
+    //             return { counter:  state.counter + 1 }
+    //         },
+    //         () => (console.log('STATE WAS CHANGED'))
+    //     );
+    //     this.setState(
+    //         (state) => {
+    //             console.log(state);
+    //             return { counter:  state.counter + 1 }
+    //         },
+    //         () => (console.log('STATE WAS CHANGED'))
+    //     );
+    //     this.setState(
+    //         (state) => {
+    //             console.log(state);
+    //             return { counter:  state.counter + 1 }
+    //         },
+    //         () => (console.log('STATE WAS CHANGED'))
+    //     );
+    // }
+
     render() {
         return (
             <div>
