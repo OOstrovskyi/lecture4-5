@@ -7,6 +7,8 @@ import {
     Dragable,
 } from '../../components/composition';
 
+import { Preloader } from '../../components/functionalComponents/Preloader';
+
 import spiner from '../../assets/images/spiner1.gif';
 
 export default class stateComponent extends Component {
@@ -14,7 +16,7 @@ export default class stateComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            image: spiner,
+            image: spiner, // don't forget to change to null
             text: 'Loading...',
         }
     }

@@ -7,7 +7,7 @@ import React from 'react';
 // import { SimpleFunctionalComponent } from './functionalComponents/simpleFunctionalComponent';
 // import { DecoratedClassComponent } from './classComponents/decoratedClassComponent';
 // import { Preloader } from './functionalComponents/Preloader';
-import Button, { TextButton } from '../components/hoc/Buttons';
+// import Button, { TextButton } from '../components/hoc/Buttons';
 
 
 // import { 
@@ -22,6 +22,8 @@ import Button, { TextButton } from '../components/hoc/Buttons';
 
 // import { Button, TextField } from '@material-ui/core';
 
+
+// STATE-N-PROPS imports
 import StateComponent from  '../statenprops/state/stateComponent';
 
 import './app.css';
@@ -30,6 +32,8 @@ export default function App() {
     return (
         <div className="app">
             <StateComponent />
+
+
         </div>
     );
 }
