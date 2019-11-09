@@ -1,15 +1,11 @@
 import React from 'react';
 
 // import createDiv from '../components/reactCreateElement';
-
 // import { ContainerComponent } from './propsAndState';
 // import { SimpleClassComponent } from './classComponents/simpleClassComponent';
 // import { SimpleFunctionalComponent } from './functionalComponents/simpleFunctionalComponent';
 // import { DecoratedClassComponent } from './classComponents/decoratedClassComponent';
 // import { Preloader } from './functionalComponents/Preloader';
-
-
-
 // import { 
 //     WrapperComponent,
 //     ImageComponent, 
@@ -17,20 +13,18 @@ import React from 'react';
 //     CardComponent,
 //     Dragable,
 // } from '../components/composition';
-
 // import { ParentComponent, ChildComponent } from './inheritance';
-
 // import { Button, TextField } from '@material-ui/core';
-
-
 // STATE-N-PROPS imports
-import { 
-    StateComponent,
-    ChangeState,
-    ControlledComponent,
-} from  '../statenprops/state';
+// import { 
+//     StateComponent,
+//     ChangeState,
+//     ControlledComponent,
+// } from  '../statenprops/state';
 
-import Button, { TextButton } from '../components/hoc/Buttons';
+//import InputComponent from "../task4/InputComponent"; //task4
+import DateDifference from "../task5/dateDifference"; //task5
+//import Button, { TextButton } from '../components/hoc/Buttons';
 
 import './app.css';
 
@@ -38,15 +32,11 @@ export default function App() {
     return (
         <div className="app">
             {/* <StateComponent /> */}
-
             {/* <ChangeState /> */}
-
             {/* <Button/> */}
-
             {/* <Button>
                 <p>Hello</p>
             </Button> */}
-
             {/* <Button
                 content={<p>Hello</p>}
                 onClick={onClick}
@@ -54,14 +44,15 @@ export default function App() {
                 className="toUpperCase"
             /> */}
 
-            {/* <ControlledComponent /> */}
+            {/* <InputComponent /> */} 
+            <DateDifference />
         </div>
     );
 }
 
-function onClick() {
-    console.log('NEW ONCLICK HANDLER');
-};
+// function onClick() {
+//     console.log('NEW ONCLICK HANDLER');
+// };
 
 export const buttonStyle = {
     backgroundColor: 'pink',
